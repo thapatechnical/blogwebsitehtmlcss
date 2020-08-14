@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Josefin+Sans&display=swap');
+
+:root {
+    --bg-size: 100% 100%;
+    --main-color: #000;
+    --title: 'Josefin Sans', sans-serif;
+    --font-para: 'David Libre', serif;
+}
+
+* {
+    font-family: var(--font-para);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+.main_header__div {
+    height: calc(100vh - 40vh);
+    background-image: url('https://images.pexels.com/photos/934062/pexels-photo-934062.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+    background-size: var(--bg-size);
+}
+
+.main_heading {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 6rem;
+    color: var(--main-color);
+}
+
+.main_heading__para {
+    font-size: 2.2rem;
+}
+
+.main_header__div p {
+    font-size: 3.5rem;
+    font-family: var(--title);
+}
+
+.main_header__div h2 {
+    font-size: 6rem;
+    font-weight: bold;
+    font-family: var(--title);
+}
+
+.main_header__div button {
+    color: #fff;
+    border-width: .2rem;
+    font-size: 1.4rem;
+    transition: .3s all ease;
+    padding: .8rem .2rem;
+    background-color: #6610f2;
+    border-color: #6610f2;
+    font-family: var(--title);
+}
+
+/*header responsive code*/
+@media(max-width:998px) {
+    html {
+        font-size: 55%;
+    }
+
+}
+
+@media(max-width:768px) {
+    html {
+        font-size: 45%;
+    }
+
+}
+
+/************* right side of the blog style starts*/
+.blog_right__div h1 {
+    font-family: var(--title);
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.popular_post__img:nth-child(1) {
+    background-image: url('https://img.icons8.com/fluent/48/000000/laptop.png');
+    background-size: var(--bg-size);
+}
